@@ -1,8 +1,7 @@
-package com.report.generator.demo;
+package com.wanted;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
-import java.util.Arrays;
 
 public class AmountToWords {
     private static final String[] tensNames = {
@@ -56,9 +55,5 @@ public class AmountToWords {
         String cents = convertLessThanOneThousand(Integer.parseInt(parts[1]));
 
         return result.trim() + " dollars and" + cents + " cents";
-    }
-
-    public static void main(String[] args) {
-        System.out.println(convert(new BigDecimal("99999.99")));
     }
 }

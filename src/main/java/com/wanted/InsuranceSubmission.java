@@ -1,4 +1,4 @@
-package com.report.generator.demo;
+package com.wanted;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -32,12 +32,6 @@ public class InsuranceSubmission {
         }
 
         return holidays.contains(date);
-    }
-
-    public static void main(String[] args) {
-        LocalDate today = LocalDate.of(2024, 8, 10);
-        LocalDate nextWorkingDay = getVacCheck(today);
-        System.out.println("Next working day: " + nextWorkingDay);
     }
 
 }
